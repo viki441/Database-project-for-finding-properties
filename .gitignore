@@ -1,0 +1,18 @@
+# Java
+*.class
+*.jar
+target/
+out/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+
+# Node (if you use React later)
+node_modules/
+dist/
+build/

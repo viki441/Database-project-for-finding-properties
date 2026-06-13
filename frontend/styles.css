@@ -1,0 +1,60 @@
+body{
+  background-color: #efaf13;
+}
+
+/*.output{
+  max-width: 200px;
+  //height: 40px;
+  background-color: white;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}*/
+
+.label{
+  visibility: hidden;
+  
+  .active + & {
+    visibility: visible;
+  }
+  
+  .label-text{
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    fill: black;
+  }
+
+  
+  .label-box{
+    fill: rgb(255, 255, 255);
+  }
+}
+
+svg{
+  
+  & .region{
+    stroke: #efaf13;
+    stroke-width: 1px;
+  }
+  
+  & .region:hover{
+    fill: rgb(79, 11, 11);
+    
+      & + .label{
+        visibility: visible;
+    }
+  }
+}
+
