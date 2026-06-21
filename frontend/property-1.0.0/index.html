@@ -30,6 +30,7 @@
   <title>
     Имоти
   </title>
+  
 </head>
 
 <body>
@@ -42,34 +43,25 @@
     <div class="site-mobile-menu-body"></div>
   </div>
 
+  <!--НАВИГАЦИЯ-->
   <nav class="site-nav">
     <div class="container">
       <div class="menu-bg-wrap">
         <div class="site-navigation">
-          <a href="index.html" class="logo m-0 float-start">Property</a>
-
+          <a href="index.html" class="logo m-0 float-start">Имоти</a>
           <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Начало</a></li>
             <li class="has-children">
-              <a href="properties.html">Properties</a>
+              <a href="properties.html">Имоти</a>
               <ul class="dropdown">
-                <li><a href="#">Buy Property</a></li>
-                <li><a href="#">Sell Property</a></li>
-                <li class="has-children">
-                  <a href="#">Dropdown</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Sub Menu One</a></li>
-                    <li><a href="#">Sub Menu Two</a></li>
-                    <li><a href="#">Sub Menu Three</a></li>
-                  </ul>
-                </li>
+                <li><a href="#">Купи имот</a></li>
+                <li><a href="#">Продай имот</a></li>
               </ul>
             </li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html">За сайта</a></li>
+            <li><a href="contact.html">Вход</a></li>
           </ul>
-
           <a href="#"
             class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
             data-toggle="collapse" data-target="#main-navbar">
@@ -80,6 +72,7 @@
     </div>
   </nav>
 
+ <!--MAIN FORM-->
   <div class="hero">
     <div class="hero-slide">
       <div class="img overlay" style="background-image: url('images/hero_bg_3.jpg')"></div>
@@ -91,10 +84,8 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-9 text-center">
           <h1 class="heading" data-aos="fade-up">
-            Easiest way to find your dream home
+            Най-лесният начин да намерите дома на мечтите си
           </h1>
-
-          <!--MAIN FORM-->
 
           <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
             data-aos-delay="200">
@@ -102,11 +93,9 @@
             <div class="main-form-child">
               <label for="">Choose type of property</label>
               <select name="property-type" id="property-type" class="main-form-child form-control px-4">
-                <option value="all">All</option>
-                <option value="house">House</option>
-                <option value="apartment">Apartment
-
-                </option>
+                <option value="all">всички</option>
+                <option value="house">къщи</option>
+                <option value="apartment">апартаменти</option>
               </select>
             </div>
 
@@ -119,34 +108,58 @@
             </div>
 
             <div class="main-form-child">
-              <label>Area: in m^2</label>
-              <input type="number" name="" id="price-meter-start" placeholder="From"
-                class="main-form-child form-control px-4">
-              <input type="number" name="" id="price-meter-end" placeholder="To"
-                class="main-form-child form-control px-4">
+              <label>Select district:</label>
+              <select name="property-type" id="property-type" class="main-form-child form-control px-4">
+                <option value="all">всички</option>
+                <option value="vidin">Видин</option>
+                <option value="montana">Монтана</option>
+                <option value="vratza">Враца</option>
+                <option value="pleven">Плевен</option>
+                <option value="veliko-tarnovo">Велико Търново</option>
+                <option value="ruse">Русе</option>
+                <option value="razgrad">Разград</option>
+                <option value="silistra">Силистра</option>
+                <option value="dobrich">Добрич</option>
+                <option value="sofia-grad">София град</option>
+                <option value="sofia-oblast">София област</option>
+                <option value="lovech">Ловеч</option>
+                <option value="gabrovo">Габрово</option>
+                <option value="targovishte">Търговище</option>
+                <option value="shumen">Шумен</option>
+                <option value="varna">Варна</option>
+                <option value="pernik">Перник</option>
+                <option value="kyustendil">Кюстендил</option>
+                <option value="blagoevgrad">Благоевград</option>
+                <option value="pazardzhik">Пазарджик</option>
+                <option value="smolyan">Смолян</option>
+                <option value="plovdiv">Пловдив</option>
+                <option value="kurdzhali">Кърджали</option>
+                <option value="stara-zagora">Стара Загора</option>
+                <option value="haskovo">Хасково</option>
+                <option value="sliven">Сливен</option>
+                <option value="yambol">Ямбол</option>
+                <option value="burgas">Бургас</option>               
+              </select>
             </div>
 
             <div class="main-form-child">
-              <button type="submit" class="btn btn-primary">Search</button>
-
+              <button type="submit" class="btn btn-primary">Търси</button>
             </div>
 
           </form>
-
-
-
 
         </div>
       </div>
     </div>
   </div>
 
+  <!--ПОПУЛЯРНИ-->
   <div class="section">
     <div class="container">
       <div class="row mb-5 align-items-center">
         <div class="col-lg-6">
           <h2 class="font-weight-bold text-primary heading">
-            Popular Properties
+            Популярни имоти
           </h2>
         </div>
         <div class="col-lg-6 text-lg-end">
@@ -163,7 +176,7 @@
                 <a href="property-single.html" class="img">
                   <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
                 </a>
-
+  
                 <div class="property-content">
                   <div class="price mb-2"><span>$1,291,000</span></div>
                   <div>
@@ -422,6 +435,8 @@
     </div>
   </div>
 
+
+<!--УСЛУГИ-->
   <section class="features-1">
     <div class="container">
       <div class="row">
@@ -473,6 +488,7 @@
     </div>
   </section>
 
+<!--КЛИЕНТИ-->
   <div class="section sec-testimonials">
     <div class="container">
       <div class="row mb-5 align-items-center">
