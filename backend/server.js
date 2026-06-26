@@ -6,9 +6,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const usersRoute = require("./routes/main-form-request");
+// better naming
+const mainFormRoute = require("./routes/main-form-request");
 
-app.use("/main-form-request", usersRoute);
+// route prefix
+app.use("/search", mainFormRoute);
 
 app.get("/", (req, res) => {
     res.send("Backend is working");
