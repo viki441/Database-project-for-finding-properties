@@ -1,9 +1,9 @@
+console.log("JS FILE LOADED");
 
 const form = document.getElementById("main-form");
 
-form.addEventListener("submit", function (event) {
-    console.log("JS FILE LOADED");
-    event.preventDefault(); // Don't reload the page
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
     const filters = {
         type: document.getElementById("property-type").value,
@@ -12,7 +12,7 @@ form.addEventListener("submit", function (event) {
         city: document.getElementById("district").value
     };
 
-    fetch("http://localhost:3000/main-form-request/search", {
+    const response = await fetch("http://localhost:3000/main-form-request/search", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -22,14 +22,6 @@ form.addEventListener("submit", function (event) {
 
     const properties = await response.json();
 
-    console.log(filters);
-
-
-
-
-
-
+    console.log("FILTERS:", filters);
+    console.log("RESULTS:", properties);
 });
-
-
-
