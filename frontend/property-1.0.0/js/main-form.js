@@ -20,6 +20,14 @@ form.addEventListener("submit", function (event) {
 
     const properties = await response.json();
 
+    console.log(filters);
+
+
+
+
+
+    
 });
+
 
 
