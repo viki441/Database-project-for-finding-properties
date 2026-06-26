@@ -6,12 +6,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const usersRoute = require("./routes/users");
+const usersRoute = require("./routes/main-form-request");
 
-app.use("/users", usersRoute);
+app.use("/main-form-request", usersRoute);
 
 app.get("/", (req, res) => {
-    res.send("Backend is working 🚀");
+    res.send("Backend is working");
 });
 
 app.listen(3000, () => {
