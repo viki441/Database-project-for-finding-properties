@@ -1,6 +1,8 @@
+
 const form = document.getElementById("main-form");
 
 form.addEventListener("submit", function (event) {
+    console.log("JS FILE LOADED");
     event.preventDefault(); // Don't reload the page
 
     const filters = {
@@ -26,7 +28,7 @@ form.addEventListener("submit", function (event) {
 
 
 
-    
+
 });
 
 
