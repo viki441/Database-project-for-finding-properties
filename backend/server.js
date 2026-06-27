@@ -10,7 +10,7 @@ app.use(express.json());
 const mainFormRoute = require("./routes/main-form-request");
 
 // route prefix
-app.use("/search", mainFormRoute);
+app.use("/main-form-request", mainFormRoute);
 
 app.get("/", (req, res) => {
     res.send("Backend is working");

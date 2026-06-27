@@ -28,36 +28,39 @@ const connStr = require("../db");
 
 
 router.post("/search", (req, res) => {
-    const { type, minPrice, maxPrice, distinct } = req.body;
+    const { type, minPrice, maxPrice, district } = req.body;
 
     let sql = `
-    SELECT *
-    FROM OFFERS O
-    JOIN PROPERTIES P ON O.PROPERTYID = P.PROPERTYID
-    JOIN LOCATIONS L ON P.LOCATIONID = L.LOCATIONID
-    WHERE 1=1`;
+SELECT * FROM FN3MI0700328.OFFERS O JOIN FN3MI0700328.PROPERTIES P ON O.PROPERTYID = P.PROPERTYID JOIN FN3MI0700328.LOCATIONS L ON P.LOCATIONID = L.LOCATIONID WHERE 1=1
+`;
 
     let params = [];
 
     if (type) {
-        sql += `AND O.OFFERTYPE = ?`;
+        sql += " AND O.OFFERTYPE = ?";
         params.push(type);
     }
+
+    if (district) {
+        sql += " AND L.REGION = ?";
+        params.push(district);
+    }
+
     if (minPrice) {
-        sql += `AND O.AMOUNT >= ?`;
+        sql += " AND O.AMOUNT >= ?";
         params.push(minPrice);
     }
+
     if (maxPrice) {
-        sql += `AND O.AMOUNT <= ?`;
+        sql += " AND O.AMOUNT <= ?";
         params.push(maxPrice);
-    }
-    if (distinct) {
-        sql += `AND L.REGION = ?`;
-        params.push(distinct);
     }
 
     ibmdb.open(connStr, (err, conn) => {
         if (err) return res.status(500).json(err);
+
+        console.log("SQL:", sql);
+        console.log("PARAMS:", params);
 
         conn.query(sql, params, (err, data) => {
             conn.closeSync();
