@@ -9,7 +9,7 @@ form.addEventListener("submit", async (e) => {
         type: document.getElementById("property-type").value,
         minPrice: document.getElementById("min-price").value,
         maxPrice: document.getElementById("max-price").value,
-        city: document.getElementById("district").value
+        district: document.getElementById("district").value
     };
 
     const response = await fetch("http://localhost:3000/main-form-request/search", {
@@ -20,8 +20,14 @@ form.addEventListener("submit", async (e) => {
         body: JSON.stringify(filters)
     });
 
-    const properties = await response.json();
+    if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Backend error:", errorText);
+        return;
+    }
+
+    const data = await response.json();
+    console.log(data);
 
     console.log("FILTERS:", filters);
-    console.log("RESULTS:", properties);
 });
