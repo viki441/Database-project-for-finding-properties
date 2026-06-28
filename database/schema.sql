@@ -409,80 +409,33 @@ INSERT INTO APARTMENTS(PROPERTYID, HASELEVATOR) VALUES('25', 'yes');
 
 -----------------------------------------------------------------------------------IMAGES
 /*
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('1', '1', 'https://img.server.com/property1_1.jpg', 'jpg');
 
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('2', '2', 'https://img.server.com/property2_1.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('2', '2', 'plovdiv-spacious-flat-modern.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('6', '6', 'ruse-family-apartment-large.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('14', '14', 'blagoevgrad-luxury-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('21', '21', 'sofia-modern-apartment-business-park.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('22', '22', 'varna-sea-view-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('3', '3', 'varna-studio-beach.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('16', '16', 'vratsa-renovated-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('7', '7', 'pleven-apartment-near-park.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('4', '4', 'burgas-renovated-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('9', '9', 'dobrich-panoramic-view-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('24', '24', 'burgas-luxury-city-view.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('5', '5', 'stara-zagora-ground-floor-home.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('10', '10', 'shumen-quiet-neighborhood-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('11', '11', 'pernik-bright-apartment-balcony.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('12', '12', 'haskovo-cozy-home-transport.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('13', '13', 'yambol-affordable-studio.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('15', '15', 'veliko-tarnovo-historic-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('17', '17', 'gabrovo-quiet-home-garden.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('18', '18', 'kazanlak-spacious-home.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('8', '8', 'sliven-small-apartment-center.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('25', '25', 'sofia-penthouse-terrace.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('20', '20', 'montana-penthouse-view.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('1', '1', 'sofia-grad-cozy-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('19', '19', 'kyustendil-cozy-apartment.jpg', 'jpg');
+INSERT INTO IMAGES VALUES ('23', '23', 'plovdiv-family-house-garage.jpg', 'jpg');
 
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('3', '3', 'https://img.server.com/property3_1.png', 'png');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('4', '4', 'https://img.server.com/property4_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('5', '5', 'https://img.server.com/property5_1.jpeg', 'jpeg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('6', '6', 'https://img.server.com/property6_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('7', '7', 'https://img.server.com/property7_1.png', 'png');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('8', '8', 'https://img.server.com/property8_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('9', '9', 'https://img.server.com/property9_1.jpeg', 'jpeg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('10', '10', 'https://img.server.com/property10_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('11', '11', 'https://img.server.com/property11_1.png', 'png');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('12', '12', 'https://img.server.com/property12_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('13', '13', 'https://img.server.com/property13_1.jpeg', 'jpeg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('14', '14', 'https://img.server.com/property14_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('15', '15', 'https://img.server.com/property15_1.png', 'png');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('16', '16', 'https://img.server.com/property16_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('17', '17', 'https://img.server.com/property17_1.jpeg', 'jpeg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('18', '18', 'https://img.server.com/property18_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('19', '19', 'https://img.server.com/property19_1.png', 'png');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('20', '20', 'https://img.server.com/property20_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('21', '21', 'https://img.server.com/property21_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('22', '22', 'https://img.server.com/property22_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('23', '23', 'https://img.server.com/property23_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('24', '24', 'https://img.server.com/property24_1.jpg', 'jpg');
-
-INSERT INTO IMAGES(IMAGEID, OFFERID, LINKTOSERVER, FILETYPE)
-VALUES('25', '25', 'https://img.server.com/property25_1.jpg', 'jpg');
 
 */
 
