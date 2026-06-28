@@ -30,7 +30,7 @@
   <title>
     Имоти
   </title>
-  
+
 </head>
 
 <body>
@@ -72,12 +72,12 @@
     </div>
   </nav>
 
- <!--MAIN FORM-->
+  <!--MAIN FORM-->
   <div class="hero">
     <div class="hero-slide">
-      <div class="img overlay" style="background-image: url('images/hero_bg_3.jpg')"></div>
-      <div class="img overlay" style="background-image: url('images/hero_bg_2.jpg')"></div>
-      <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
+      <div class="img overlay" style="background-image: url('images/ruse-family-apartment-large.jpg')"></div>
+      <div class="img overlay" style="background-image: url('images/plovdiv-spacious-flat-modern.jpg')"></div>
+      <div class="img overlay" style="background-image: url('images/blagoevgrad-luxury-apartment.jpg')"></div>
     </div>
 
     <div class="container">
@@ -100,15 +100,14 @@
             </div>
 
             <div class="main-form-child">
-              <label>Price:</label>
-              <input type="number" name="" id="min-price" placeholder="From"
-                class="main-form-child form-control px-4">
+              <label>Цена:</label>
+              <input type="number" name="" id="min-price" placeholder="From" class="main-form-child form-control px-4">
               <input type="number" name="" id="max-price" placeholder="To" class="main-form-child form-control px-4">
               <!--cur will be displayed as you view selected offer, its not critirea-->
             </div>
 
             <div class="main-form-child">
-              <label>Select district:</label>
+              <label>Област:</label>
               <select name="property-type" id="district" class="main-form-child form-control px-4">
                 <option value="">всички</option>
                 <option value="Vidin">Видин</option>
@@ -138,7 +137,7 @@
                 <option value="Haskovo">Хасково</option>
                 <option value="Sliven">Сливен</option>
                 <option value="Yambol">Ямбол</option>
-                <option value="Burgas">Бургас</option>               
+                <option value="Burgas">Бургас</option>
               </select>
             </div>
 
@@ -164,7 +163,7 @@
         </div>
         <div class="col-lg-6 text-lg-end">
           <p>
-            <a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">View all properties</a>
+            <a href="search.html" class="btn btn-primary text-white py-3 px-4" id="see-all-properties">Вижте всички</a>
           </p>
         </div>
       </div>
@@ -176,26 +175,28 @@
               <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/blagoevgrad-luxury-apartment.jpg" alt="Image" class="img-fluid" />
                 </a>
+
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>200000€</span></div>
+
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Luxury apartment Blagoevgrad</span>
+                    <span class="city d-block mb-3">Blagoevgrad, Blagoevgrad</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon- me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 130</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 4</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
@@ -203,55 +204,82 @@
               <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/sofia-grad-cozy-apartment.jpg" alt="Image" class="img-fluid" />
                 </a>
-
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>800€</span></div>
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Cozy apartment in Sofia center</span>
+                    <span class="city d-block mb-3">Sofia-Grad, Sofia</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 65</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 2</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
 
-               <!--PROPERTY-->
+
+              <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/sofia-modern-apartment-business-park.jpg" alt="Image" class="img-fluid" />
                 </a>
-
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>165000€</span></div>
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Modern apartment in Sofia</span>
+                    <span class="city d-block mb-3">Sofia-Grad, Sofia</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 95</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 3</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <!--PROPERTY-->
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/sofia-penthouse-terrace.jpg" alt="Image" class="img-fluid" />
+                </a>
+                <div class="property-content">
+                  <div class="price mb-2"><span>350000€</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Penthouse in Sofia</span>
+                    <span class="city d-block mb-3">Sofia-Grad, Sofia</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 180</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 5</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
@@ -259,176 +287,145 @@
               <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/burgas-renovated-apartment.jpg" alt="Image" class="img-fluid" />
                 </a>
-
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>95000€</span></div>
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Renovated apartment in Burgas</span>
+                    <span class="city d-block mb-3">Burgas, Burgas</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 70</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 2</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
 
-               <!--PROPERTY-->
+              <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/burgas-luxury-city-view.jpg" alt="Image" class="img-fluid" />
                 </a>
-
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>190000€</span></div>
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Luxury apartment Burgas</span>
+                    <span class="city d-block mb-3">Burgas, Burgas</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 110</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 3</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
 
-               <!--PROPERTY-->
+
+              <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/varna-studio-beach.jpg" alt="Image" class="img-fluid" />
                 </a>
-
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>500€</span></div>
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Studio near Varna beach</span>
+                    <span class="city d-block mb-3">Varna, Varna</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 45</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 1</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
 
-               <!--PROPERTY-->
+
+              <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/varna-sea-view-apartment.jpg" alt="Image" class="img-fluid" />
                 </a>
-
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>850€</span></div>
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Sea view apartment Varna</span>
+                    <span class="city d-block mb-3">Varna, Varna</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 70</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 2</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
-            
-               <!--PROPERTY-->
+
+
+              <!--PROPERTY-->
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
+                  <img src="images/blagoevgrad-luxury-apartment.jpg" alt="Image" class="img-fluid" />
                 </a>
-
                 <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div class="price mb-2"><span>650€</span></div>
                   <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
+                    <span class="d-block mb-2 text-black-50">Historic area Veliko Tarnovo</span>
+                    <span class="city d-block mb-3">Veliko Tarnovo, Veliko Tarnovo</span>
 
                     <div class="specs d-flex mb-4">
                       <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">area m<sup>2</sup>: 72</span>
                       </span>
                       <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
+                        <span class="icon-home2 me-2"></span>
+                        <span class="caption">room count: 2</span>
                       </span>
                     </div>
 
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">Виж повече</a>
                   </div>
                 </div>
               </div>
-
-               <!--PROPERTY-->
-              <div class="property-item">
-                <a href="property-single.html" class="img">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                </a>
-
-                <div class="property-content">
-                  <div class="price mb-2"><span>$1,291,000</span></div>
-                  <div>
-                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
-                    <span class="city d-block mb-3">California, USA</span>
-
-                    <div class="specs d-flex mb-4">
-                      <span class="d-block d-flex align-items-center me-3">
-                        <span class="icon-bed me-2"></span>
-                        <span class="caption">2 beds</span>
-                      </span>
-                      <span class="d-block d-flex align-items-center">
-                        <span class="icon-bath me-2"></span>
-                        <span class="caption">2 baths</span>
-                      </span>
-                    </div>
-
-                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
             <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
-              <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
-              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+              <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Назад</span>
+              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Напред</span>
             </div>
           </div>
         </div>
@@ -436,200 +433,82 @@
     </div>
   </div>
 
-<!--УСЛУГИ-->
+  <!--УСЛУГИ-->
   <section class="features-1">
     <div class="container">
       <div class="row">
         <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
           <div class="box-feature">
             <span class="flaticon-house"></span>
-            <h3 class="mb-3">Our Properties</h3>
+            <h3 class="mb-3">Нашите имоти</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptates, accusamus.
+              Предлагаме богат избор от имоти в цялата страна – от модерни 
+              апартаменти в големите градове до уютни жилища в по-тихи 
+              райони. Нашата платформа ви помага лесно да откриете идеалния 
+              дом според вашите нужди и бюджет.
             </p>
-            <p><a href="services.html" class="learn-more">Learn More</a></p>
+            <p><a href="services.html" class="learn-more">Виж повече</a></p>
           </div>
         </div>
+
         <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
           <div class="box-feature">
             <span class="flaticon-building"></span>
-            <h3 class="mb-3">Property for Sale</h3>
+            <h3 class="mb-3">Имоти за продажба</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptates, accusamus.
+              Разгледайте актуални оферти за продажба на апартаменти, къщи и 
+              инвестиционни имоти. Всяка обява съдържа подробна информация и 
+              снимки, за да направите най-добрия избор.
             </p>
-            <p><a href="services.html" class="learn-more">Learn More</a></p>
+            <p><a href="services.html" class="learn-more">Виж повече</a></p>
           </div>
         </div>
+
         <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
           <div class="box-feature">
             <span class="flaticon-house-3"></span>
-            <h3 class="mb-3">Real Estate Agent</h3>
+            <h3 class="mb-3">Нашите агенти</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptates, accusamus.
+              Работим с опитни и проверени агенти в недвижимите имоти, които 
+              ще ви съдействат през целия процес – от първото търсене до 
+              финализиране на сделката.
             </p>
-            <p><a href="services.html" class="learn-more">Learn More</a></p>
+            <p><a href="services.html" class="learn-more">Виж повече</a></p>
           </div>
+
         </div>
+
         <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
           <div class="box-feature">
             <span class="flaticon-house-1"></span>
-            <h3 class="mb-3">House for Sale</h3>
+            <h3 class="mb-3">Къщи за продажба</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptates, accusamus.
+              Открийте разнообразие от къщи за продажба – от компактни семейни 
+              домове до просторни имоти с двор. Перфектни възможности за спокоен 
+              живот извън градската среда.
             </p>
-            <p><a href="services.html" class="learn-more">Learn More</a></p>
+            <p><a href="services.html" class="learn-more">Виж повече</a></p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
-
-<!--КЛИЕНТИ-->
-  <div class="section sec-testimonials">
-    <div class="container">
-
-      <div class="row mb-5 align-items-center">
-        <div class="col-md-6">
-          <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-            Наши клиенти
-          </h2>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <div id="testimonial-nav">
-            <span class="prev" data-controls="prev">Назад</span>
-
-            <span class="next" data-controls="next">Напред</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4"></div>
-      </div>
-
-      <div class="testimonial-slider-wrap">
-        <div class="testimonial-slider">
-
-          <!--КЛИЕНТ-->
-          <div class="item">
-            <div class="testimonial">
-              <img src="images/person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
-              <div class="rate">
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-              </div>
-              <h3 class="h5 text-primary mb-4">James Smith</h3>
-              <blockquote>
-                <p>
-                  &ldquo;Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind
-                  texts. Separated they live in Bookmarksgrove right at the
-                  coast of the Semantics, a large language ocean.&rdquo;
-                </p>
-              </blockquote>
-              <p class="text-black-50">Designer, Co-founder</p>
-            </div>
-          </div>
-
-          <!--КЛИЕНТ-->
-          <div class="item">
-            <div class="testimonial">
-              <img src="images/person_2-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
-              <div class="rate">
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-              </div>
-              <h3 class="h5 text-primary mb-4">Mike Houston</h3>
-              <blockquote>
-                <p>
-                  &ldquo;Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind
-                  texts. Separated they live in Bookmarksgrove right at the
-                  coast of the Semantics, a large language ocean.&rdquo;
-                </p>
-              </blockquote>
-              <p class="text-black-50">Designer, Co-founder</p>
-            </div>
-          </div>
-
-          <!--КЛИЕНТ-->
-          <div class="item">
-            <div class="testimonial">
-              <img src="images/person_3-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
-              <div class="rate">
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-              </div>
-              <h3 class="h5 text-primary mb-4">Cameron Webster</h3>
-              <blockquote>
-                <p>
-                  &ldquo;Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind
-                  texts. Separated they live in Bookmarksgrove right at the
-                  coast of the Semantics, a large language ocean.&rdquo;
-                </p>
-              </blockquote>
-              <p class="text-black-50">Designer, Co-founder</p>
-            </div>
-          </div>
-
-          <!--КЛИЕНТ-->
-          <div class="item">
-            <div class="testimonial">
-              <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
-              <div class="rate">
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-                <span class="icon-star text-warning"></span>
-              </div>
-              <h3 class="h5 text-primary mb-4">Dave Smith</h3>
-              <blockquote>
-                <p>
-                  &ldquo;Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind
-                  texts. Separated they live in Bookmarksgrove right at the
-                  coast of the Semantics, a large language ocean.&rdquo;
-                </p>
-              </blockquote>
-              <p class="text-black-50">Designer, Co-founder</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
+  
+  <!--INFORMATION-->
   <div class="section section-4 bg-light">
     <div class="container">
 
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-5">
           <h2 class="font-weight-bold heading text-primary mb-4">
-            Let's find home that's perfect for you
+            Нека намерим дом, който е идеален за Вас
           </h2>
           <p class="text-black-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            enim pariatur similique debitis vel nisi qui reprehenderit.
+              С нашата платформа лесно можете да откриете имот, който 
+              отговаря на вашите изисквания – независимо дали търсите 
+              покупка, наем или инвестиция. Ние ви помагаме да направите 
+              правилния избор бързо и сигурно.
           </p>
         </div>
       </div>
@@ -637,7 +516,7 @@
       <div class="row justify-content-between mb-5">
         <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
           <div class="img-about dots">
-            <img src="images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
+            <img src="images/ruse-family-apartment-large.jpg" alt="Image" class="img-fluid"/>
           </div>
         </div>
         <div class="col-lg-4">
@@ -646,10 +525,11 @@
               <span class="icon-home2"></span>
             </span>
             <div class="feature-text">
-              <h3 class="heading">2M Properties</h3>
+              <h3 class="heading">Имоти</h3>
               <p class="text-black-50">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nostrum iste.
+                 Разполагаме с голям избор от имоти в цялата страна – хиляди 
+                 активни оферти, които се обновяват ежедневно, за да ви 
+                 предложим винаги най-добрите възможности.
               </p>
             </div>
           </div>
@@ -659,10 +539,11 @@
               <span class="icon-person"></span>
             </span>
             <div class="feature-text">
-              <h3 class="heading">Top Rated Agents</h3>
+              <h3 class="heading">Най-високо оценени агенти</h3>
               <p class="text-black-50">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nostrum iste.
+                  Работим с опитни и високо оценени агенти, които гарантират 
+                  професионално обслужване и съдействие във всеки етап от 
+                  покупко-продажбата или наема.
               </p>
             </div>
           </div>
@@ -672,10 +553,11 @@
               <span class="icon-security"></span>
             </span>
             <div class="feature-text">
-              <h3 class="heading">Legit Properties</h3>
+              <h3 class="heading">Легитимни имоти</h3>
               <p class="text-black-50">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nostrum iste.
+                  Всички обяви са проверени и публикувани от надеждни 
+                  източници, за да гарантираме сигурност и спокойствие при 
+                  всяка сделка.
               </p>
             </div>
           </div>
@@ -685,150 +567,86 @@
       <div class="row section-counter mt-5">
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">3298</span></span>
-            <span class="caption text-black-50"># of Buy Properties</span>
+            <span class="number"><span class="countup text-primary" id="buy-count"></span></span>
+            <span class="caption text-black-50"># имоти за продажба</span>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">2181</span></span>
-            <span class="caption text-black-50"># of Sell Properties</span>
+            <span class="number"><span class="countup text-primary" id="rent-count"></span></span>
+            <span class="caption text-black-50"># имоти за наем</span>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">9316</span></span>
-            <span class="caption text-black-50"># of All Properties</span>
+            <span class="number"><span class="countup text-primary" id="all-count"></span></span>
+            <span class="caption text-black-50"># имоти</span>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
           <div class="counter-wrap mb-5 mb-lg-0">
-            <span class="number"><span class="countup text-primary">7191</span></span>
-            <span class="caption text-black-50"># of Agents</span>
+            <span class="number"><span class="countup text-primary" id="agents-count"></span></span>
+            <span class="caption text-black-50"># агенти</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section">
-    <div class="row justify-content-center footer-cta" data-aos="fade-up">
-      <div class="col-lg-7 mx-auto text-center">
-        <h2 class="mb-4">Be a part of our growing real state agents</h2>
-        <p>
-          <a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">Apply for Real Estate agent</a>
-        </p>
-      </div>
-      <!-- /.col-lg-7 -->
-    </div>
-    <!-- /.row -->
-  </div>
 
-  <div class="section section-5 bg-light">
+  <!--rent and buy-->
+  <section class="features-1">
     <div class="container">
+      <div class="row row-properties">
+
+        <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature">
+            <span class="flaticon-building"></span>
+            <h3 class="mb-3">Имоти за наем</h3>
+            <p>
+              Разгледайте актуални оферти за наем на апартаменти и къщи. 
+              <br/>Всяка обява съдържа подробна информация и 
+              снимки, за да направите най-добрия избор.
+            </p>
+            <p><a href="search.html" class="learn-more" id="see-all-rent">Виж всички</a></p>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature">
+            <span class="flaticon-building"></span>
+            <h3 class="mb-3">Имоти за продажба</h3>
+            <p>
+              Разгледайте актуални оферти за продажба на апартаменти, къщи и 
+              инвестиционни имоти. Всяка обява съдържа подробна информация и 
+              снимки, за да направите най-добрия избор.
+            </p>
+            <p><a href="search.html" class="learn-more" id="see-all-buy">Виж всички</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!--АГЕНТИ-->
+  <div class="section section-5 bg-light">
+    <div class="container" >
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-6 mb-5">
           <h2 class="font-weight-bold heading text-primary mb-4">
-            Our Agents
+            Топ агенти
           </h2>
           <p class="text-black-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            enim pariatur similique debitis vel nisi qui reprehenderit totam?
-            Quod maiores.
+            Работим с опитни и високо оценени агенти, които гарантират 
+            професионално обслужване и съдействие във всеки етап от 
+            покупко-продажбата или наема. 
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-          <div class="h-100 person">
-            <img src="images/person_1-min.jpg" alt="Image" class="img-fluid" />
-
-            <div class="person-contents">
-              <h2 class="mb-0"><a href="#">James Doe</a></h2>
-              <span class="meta d-block mb-3">Real Estate Agent</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Facere officiis inventore cumque tenetur laboriosam, minus
-                culpa doloremque odio, neque molestias?
-              </p>
-
-              <ul class="social list-unstyled list-inline dark-hover">
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-          <div class="h-100 person">
-            <img src="images/person_2-min.jpg" alt="Image" class="img-fluid" />
-
-            <div class="person-contents">
-              <h2 class="mb-0"><a href="#">Jean Smith</a></h2>
-              <span class="meta d-block mb-3">Real Estate Agent</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Facere officiis inventore cumque tenetur laboriosam, minus
-                culpa doloremque odio, neque molestias?
-              </p>
-
-              <ul class="social list-unstyled list-inline dark-hover">
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-          <div class="h-100 person">
-            <img src="images/person_3-min.jpg" alt="Image" class="img-fluid" />
-
-            <div class="person-contents">
-              <h2 class="mb-0"><a href="#">Alicia Huston</a></h2>
-              <span class="meta d-block mb-3">Real Estate Agent</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Facere officiis inventore cumque tenetur laboriosam, minus
-                culpa doloremque odio, neque molestias?
-              </p>
-
-              <ul class="social list-unstyled list-inline dark-hover">
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="row" id="top-3-agents">
       </div>
     </div>
   </div>
@@ -947,14 +765,24 @@
     </div>
   </div>
 
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/tiny-slider.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/custom.js"></script>
+
   <script src="js/main-form.js"></script>
+  <script src="js/see-all.js"></script>
+  <script src="js/search.html"></script>
+  <script src="js/statistics.js"></script>
+  <script src="js/pagination.js"></script>
+  <script src="js/prepare-card.js"></script>
+  <script src="js/agents.js"></script>
+
   
+
 </body>
 
 </html>

@@ -1,5 +1,3 @@
-console.log("JS FILE LOADED");
-
 const form = document.getElementById("main-form");
 
 form.addEventListener("submit", async (e) => {
