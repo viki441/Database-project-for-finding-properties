@@ -16,9 +16,6 @@ window.addEventListener("load", async () => {
         document.getElementById("all-count").textContent = stats.ALL_PROPERTIES;
         document.getElementById("agents-count").textContent = stats.AGENTS_COUNT;
 
-       
-
-
     } catch (err) {
         console.error("Failed to load stats:", err);
     }
