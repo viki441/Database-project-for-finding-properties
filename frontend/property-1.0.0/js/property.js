@@ -37,6 +37,9 @@ function editProperty(data) {
     document.getElementById("heading-small").textContent = data.HEADING;
 
 
+    //status
+    document.getElementById("status").textContent = "Available: " + data.STATUS;
+
     //description
     document.getElementById("description").textContent = data.DESCRIPTION;
 
@@ -45,7 +48,39 @@ function editProperty(data) {
         userType = "Agent";
     }
 
+    //publish date
+    document.getElementById("publish-date").textContent = "Publish date: " + data.PUBLISHDATE;
 
+    //FLOOR
+    document.getElementById("floor").textContent = "Floor: " + data.FLOOR;
+
+    //room count
+    document.getElementById("room-count").textContent = "Room count: " + data.ROOMCOUNT;
+
+    //AREA
+    document.getElementById("area").textContent = "Area: " + data.AREA;
+
+    //location
+    document.getElementById("location").textContent = "Location: " + data.CITY;
+
+    //address
+    document.getElementById("address").textContent = "Address: " + data.STREET;
+
+    //HOUSE OR APARTMENT
+    let hasYard = "No yard";
+    let hasElevator = "No elevator";
+
+    if(data.HASYARD == true)
+    {
+       hasYard = "Has yard";
+    }
+     if(data.HASELEVATOR == true)
+    {
+        hasElevator = "Has elevator";   
+    }
+
+    document.getElementById("yard").textContent = hasYard;
+    document.getElementById("elevator").textContent = hasElevator;
     //personal
     console.log(data.PERSONALDESCRIPTION);
     document.getElementById("personal-description").textContent = data.PERSONALDESCRIPTION;

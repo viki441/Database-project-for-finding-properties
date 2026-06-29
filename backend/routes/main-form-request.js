@@ -122,9 +122,7 @@ ORDER BY OFFER_COUNT DESC
     });
 });
 
-
-
-
+//INDIVIDUAL PROPERTY
 router.get("/property/:id", (req, res) => {
 
     const id = req.params.id;
@@ -144,6 +142,8 @@ JOIN FN3MI0700328.USERS U ON U.USERNAME = O.USERNAME
 JOIN FN3MI0700328.LOCATIONS L ON P.LOCATIONID = L.LOCATIONID
 JOIN FN3MI0700328.IMAGES I ON I.OFFERID = O.OFFERID
 LEFT JOIN FN3MI0700328.AGENCIES A ON U.USERNAME = A.USERNAME
+LEFT JOIN FN3MI0700328.HOUSES H ON H.PROPERTYID = P.PROPERTYID
+LEFT JOIN FN3MI0700328.APARTMENTS AP ON AP.PROPERTYID = P.PROPERTYID
 WHERE O.OFFERID = ?
 `;
 
@@ -165,5 +165,46 @@ WHERE O.OFFERID = ?
         });
     });
 });
+
+
+//TOP 3 OFFERS
+router.get("/latest-properties", (req, res) => {
+
+    const sql = `
+        SELECT 
+            O.OFFERID,
+            O.AMOUNT,
+            O.OFFERTYPE,
+            O.HEADING,
+            P.AREA,
+            P.ROOMCOUNT,
+            P.PROPERTYID,
+            L.CITY,
+            L.REGION,
+            I.LINKTOSERVER
+        FROM FN3MI0700328.OFFERS O
+        JOIN FN3MI0700328.PROPERTIES P 
+            ON O.PROPERTYID = P.PROPERTYID
+        JOIN FN3MI0700328.LOCATIONS L 
+            ON P.LOCATIONID = L.LOCATIONID
+        LEFT JOIN FN3MI0700328.IMAGES I 
+            ON I.OFFERID = O.OFFERID
+        ORDER BY O.OFFERID DESC
+        FETCH FIRST 3 ROWS ONLY
+    `;
+
+    ibmdb.open(connStr, (err, conn) => {
+        if (err) return res.status(500).json(err);
+
+        conn.query(sql, (err, data) => {
+            conn.closeSync();
+
+            if (err) return res.status(500).json(err);
+
+            res.json(data);
+        });
+    });
+});
+
 
 module.exports = router;
