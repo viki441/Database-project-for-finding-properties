@@ -10,7 +10,7 @@ function prepareCard(item) {
 
     //the image is clickable
     const topLink = document.createElement("a");
-    topLink.setAttribute("href", "property-single.html");
+    topLink.href = `property-single.html?id=${item.PROPERTYID}`;
     topLink.classList.add("img");
 
     const clickImage = document.createElement("img");
@@ -90,7 +90,7 @@ function prepareCard(item) {
     //add botLink
     const botLink = document.createElement("a");
     botLink.classList.add("btn", "btn-primary", "py-2", "px-3");
-    botLink.setAttribute("href", "property-single.html");
+    botLink.href = `property-single.html?id=${item.PROPERTYID}`;
     botLink.innerHTML = "Виж повече";
 
     otherInfo.appendChild(botLink);

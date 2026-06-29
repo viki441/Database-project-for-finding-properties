@@ -1,22 +1,22 @@
-const container = document.getElementById("top-3-agents");
 
-window.addEventListener("load", async () => {
-    try {
-        const res = await fetch("http://localhost:3000/main-form-request/agents");
+const containerAgents = document.getElementById("top-3-agents");
 
-        const data = await res.json();
-
-        const container = document.getElementById("top-3-agents");
-        container.innerHTML = "";
-
-        data.forEach(agent => {
-            const card = prepareAgent(agent);
-            container.appendChild(card);
-        });
-
-    } catch (err) {
-        console.error("Failed to load agents:", err);
+window.addEventListener("DOMContentLoaded", async () => {
+    
+    if (!containerAgents) {
+        console.error("Container not found!");
+        return;
     }
+
+    const res = await fetch("http://localhost:3000/main-form-request/agents");
+    const data = await res.json();
+
+    containerAgents.innerHTML = "";
+
+    data.forEach(agent => {
+        const card = prepareAgent(agent);
+        containerAgents.appendChild(card);
+    });
 });
 
 
@@ -31,7 +31,7 @@ function prepareAgent(agent) {
     main.appendChild(subMain);
 
     const image = document.createElement("img");
-    image.src = "images/person_1-min.jpg";
+    image.src = "images/profilePic.png";
     image.classList.add("img-fluid");
     subMain.appendChild(image);
 
@@ -46,13 +46,13 @@ function prepareAgent(agent) {
 
     const email = document.createElement("span");
     email.classList.add("meta", "d-block", "mb-3");
-    email.textContent = agent.EMAIL;
+    email.textContent = agent.WEBSITE;
     personContents.appendChild(email);
 
-    const address = document.createElement("span");
-    address.classList.add("meta", "d-block", "mb-3");
-    address.textContent = "Agency address: " + (agent.ADDRESS || "");
-    personContents.appendChild(address);
+    const phonenumber = document.createElement("span");
+    phonenumber.classList.add("meta", "d-block", "mb-3");
+    phonenumber.textContent = "Agent phone number: " + agent.PHONENUMBER;
+    personContents.appendChild(phonenumber);
 
     const ulSocials = document.createElement("ul");
     ulSocials.classList.add("social", "list-unstyled", "list-inline", "dark-hover");
