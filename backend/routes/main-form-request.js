@@ -5,9 +5,7 @@ const ibmdb = require("ibm_db");
 const connStr = require("../db");
 
 
-// =========================
-// SEARCH OFFERS (FILTERS)
-// =========================
+//search properties
 router.post("/search", (req, res) => {
 
     const { type, minPrice, maxPrice, district } = req.body;
@@ -57,9 +55,7 @@ router.post("/search", (req, res) => {
 });
 
 
-// =========================
-// STATISTICS (HOMEPAGE)
-// =========================
+//statistics
 router.get("/statistics", (req, res) => {
 
     const sql = `
